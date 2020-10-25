@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
+
+*{ /* reset for elements */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{ /* body styling */
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul{ /* getting rid of bullets */
+    list-style-type: none;
+}
+
+a{ /* no underline + color change */
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2, h3, h4{ /* default for h1 - h4 */
+    line-height: 1.2;
+    margin: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation Bar */
+.navbar{ /* navbar styling */
+    height: 70px;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar a{
+    padding: 20px;
+    margin: 0 5px;
+}
+
+/* .navbar h1:hover{ /* adds a line underneath over mouse hover
+    border-bottom: 2px #333 solid;
+} */
+
+.navbar img{
+    width: 69px;
+    height: 86px;
+}
+
+.navbar h1{
+    font-size: 50px;
+    position: relative;
+}
+
+/* .navbar p{
+    position: relative;
+    font-size: 50px;
+    padding-right: 400px;
+} */
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+/* Hero Section */
+.herosection{
+    height: 800px;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.herosection-img img{
+    /* border: 1px solid red; */
+    height: 600px;
+    border-radius: 20px;
+}
+
+.herosection .flex{
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.herosection .btn{
+    margin: 10px 0;
+}
+
+.inner-container-text{
+    /* border: 1px solid red; */
+    width: 700px;
+    height: auto;
+}
+
+.inner-container-text p{
+    padding: 10px 0;
+}
+
+.inner-container-img{
+    /* border: 3px solid blue; */
+    width: 457px;
+}
+
+/* Footer */
+.mainfooter{
+    height: 70px;
+    background-color: #353B44;
+    color: white;
+}
+
+.mainfooter p{
+    font-size: 16px;
+}
+
+.mainfooter ul{
+    display: flex;
+}
+
+.mainfooter a{
+    padding: 10px;
+    margin: 0 10px;
+    color: white;
+}
+
+.mainfooter .flex{
+    justify-content: space-between;
+}
+
+/* Utilities */
+.container-fluid{ /* container size and what not */
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    align-items: center;
+}
+
+.btn{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 30px;
+}
+
+.btn:hover{
+    transform: scale(0.98);
+}
