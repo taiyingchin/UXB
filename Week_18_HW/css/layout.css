@@ -81,6 +81,39 @@ h1, h2, h3, h4{ /* default for h1 - h4 */
     font-family: "Raleway:ital,wght@1,900", sans-serif;
 }
 
+/* Project Showcase */
+.showcase{
+    border: 1px solid red;
+    height: 700px;
+    display: flex;
+}
+
+.project{
+    border: 1px solid #000;
+    height: 500px;
+    width: 200px;
+    text-align: center;
+}
+
+.project .show-text{
+    padding-top: 200px;
+    font-size: 20px;
+}
+
+.project .show-num{
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.showcase .container-flex{
+    border: 1px solid green;
+}
+
+/* .project1:hover{
+    color: white;
+    background-image: url(/images/Ontario.jpeg);
+} */
+
 /* Utilities */
 .container-flex{
     max-width: 1500px;
