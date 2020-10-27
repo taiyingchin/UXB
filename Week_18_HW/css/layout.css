@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
+
+*{ /* reset for elements */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{ /* body styling */
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul{ /* getting rid of bullets */
+    list-style-type: none;
+}
+
+a{ /* no underline + color change */
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2, h3, h4{ /* default for h1 - h4 */
+    line-height: 1.2;
+    margin: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation Bar */
+.navbar{
+    /* border: 1px solid red; */
+    height: 70px;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar a{
+    padding: 20px;
+    margin: 0 5px;
+}
+
+.navbar img{
+    width: 69px;
+    height: 86px;
+}
+
+.navbar h1{
+    font-size: 50px;
+    position: relative;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* Hero Section */
+.herosection{
+    /* border: 1px solid red; */
+    height: 700px;
+}
+
+.welcomequote h1{
+    font-family: "Raleway", sans-serif;
+    font-size: 70px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.welcomequote h2{
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.welcomequote b{
+    font-family: "Raleway:ital,wght@1,900", sans-serif;
+}
+
+/* Utilities */
+.container-flex{
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
