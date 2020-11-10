@@ -16,7 +16,7 @@
     /* border: green solid 1px; */
     height: 100%;
     display: grid;
-    overflow: visible;
+    /* overflow: visible;  */
     grid-template-columns: repeat(4, 1fr);
     gap: 10%;
     justify-content: center;
