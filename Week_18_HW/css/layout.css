@@ -84,12 +84,17 @@ h1, h2, h3, h4{ /* default for h1 - h4 */
 
 /* Project Showcase */
 .showcase{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     height: 700px;
-    /* display: flex; */
-    justify-content: center;
-    max-width: 90%;
-    margin: 0 5%;
+    /* display: grid; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* max-width: 90%; */
+    /* margin: 0 5%; */
+}
+
+.showcase .grid{
+    border: green solid 1px;
 }
 
 .project{
@@ -109,11 +114,11 @@ h1, h2, h3, h4{ /* default for h1 - h4 */
     font-size: 20px;
 }
 
-/* .project1:hover{
+.project1:hover{
     color: white;
     background-image: url(/images/Ontario.jpeg);
     box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.3);
-} */
+}
 
 /* Footer */
 .mainfooter{
@@ -123,11 +128,16 @@ h1, h2, h3, h4{ /* default for h1 - h4 */
 }
 
 .mainfooter p{
+    border: blue solid 1px;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
 }
 
 .mainfooter ul{
+    border: blue solid 1px;
     display: flex;
+    justify-content: center;
 }
 
 .mainfooter a{
@@ -140,11 +150,48 @@ h1, h2, h3, h4{ /* default for h1 - h4 */
     grid-template-columns: repeat(2, 1fr);
 }
 
-/* Tablet */
-@media(max-width: 1000px){
+/* Between 768 to 1500 */
+@media(min-width: 768px) and (max-width: 1500px){
+    .grid,
+    .showcase .grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .showcase{
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project{
+        height: 300px;
+        width: 400px;
+    }
+
+    .project .show-text{
+        font-size: 20px;
+        padding-top: 100px;
+    }
+
+
+}
+
+/* between 500 to 768 */
+@media(min-width: 500px) and (max-width: 768px){
     .grid,
     .showcase .grid{
         grid-template-columns: 1fr;
+    }
+
+    .showcase .grid{
+        gap: 0%;
+    }
+
+    .showcase{
+        height: 900px;
+        display: flex;
     }
 
     .project{
@@ -156,13 +203,9 @@ h1, h2, h3, h4{ /* default for h1 - h4 */
         font-size: 20px;
         padding-top: 50px;
     }
-
-    .mainfooter .container-flex{
-        margin: auto;
-    }
 }
 
-/* Mobile */
+/* between 500 and under */
 @media(max-width: 500px){
     .navbar{
         height: 150px;
